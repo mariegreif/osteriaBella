@@ -1,0 +1,295 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ body,
+ html {
+     height: 100%;
+     margin: auto;
+     font-size: 100%;
+     background-color: black;
+     display: grid;
+ }
+
+
+ img {
+     width: 100%;
+
+ }
+
+ h1 {
+     text-align: center;
+ }
+
+ h2 {
+     text-align: center;
+ }
+
+ p {
+     text-align: center;
+ }
+
+ #liste {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-gap: 3rem;
+
+ }
+
+ #popup {
+     top: 0;
+     width: 100vw;
+     height: 100vh;
+     position: fixed;
+     background-color: rgba(51, 39, 18, 0.46);
+     display: none;
+     overflow: scroll;
+ }
+
+
+ #luk {
+     position: fixed;
+     right: 2rem;
+ }
+
+ #luk button {
+     font-size: 2rem;
+     padding: 1rem 1rem;
+ }
+
+
+
+ .valgt {
+     background-color: #E0D3AD;
+ }
+
+ .ret {
+     color: #E0D3AD;
+     font-family: 'Open-Sans', sans-serif;
+
+
+ }
+
+ .ret:hover {
+     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+     cursor: pointer;
+ }
+
+ header img {
+     width: 65px;
+ }
+
+ header {
+     height: 60px;
+     display: grid;
+     background-color: rgba(0, 0, 0, 0.69);
+     overflow: hidden;
+     position: fixed;
+     /* Set the navbar to fixed position */
+     top: 0;
+     /* Position the navbar at the top of the page */
+     width: 100%;
+     /* Full width */
+     z-index: 1000;
+
+ }
+
+ /*******************BURGERMENU********************/
+
+ #menuknap {
+     width: 2em;
+     height: 1.5em;
+     font-size: 2em;
+     color: #E0D3AD;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     position: fixed;
+     right: 0;
+     z-index: 10;
+     top: 0;
+ }
+
+ #menu {
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.69);
+     list-style-type: none;
+     position: fixed;
+     top: 8.2vw;
+     text-align: center;
+
+
+ }
+
+ #menu a {
+     color: #E0D3AD;
+     text-decoration: none;
+     font-family: 'Open-Sans', sans-serif;
+     font-size: 1.2rem;
+
+ }
+
+ #menu li {
+     padding: 1rem;
+ }
+
+ #menu a:hover {
+     text-decoration: underline;
+ }
+
+
+ /********************NAVBAR DESKTOP**********************/
+
+ .hidden {
+     transform: scale(0);
+ }
+
+
+
+
+ .navbar {
+     display: none;
+ }
+
+ /* Links inside the navbar */
+ .navbar a {
+     float: right;
+     display: block;
+     color: #E0D3AD;
+     text-align: center;
+     padding: 20px 16px;
+     text-decoration: none;
+     font-family: 'Open-Sans', sans-serif;
+     font-size: 1.5rem;
+     padding: 2vw
+ }
+
+ /* Change background on mouse-over */
+ .navbar a:hover {
+     border-left-style: solid;
+     border-right-style: solid;
+
+ }
+
+
+
+ /*****************COVERBILLEDE************/
+ #parallax-1 {
+     background-image: url(coverBillede.svg);
+ }
+
+ .bg-img {
+     background-attachment: scroll;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     min-height: 300px;
+     min-width: 300px;
+
+ }
+
+
+
+ /******************SORTERINGS-KNAP*****************/
+ nav {
+     margin-top: 2rem;
+     text-align: center;
+
+ }
+
+ button {
+     place-self: center;
+     background-color: #FDAC49;
+     font-family: 'Open Sans', sans-serif;
+     padding: 0.7rem 1rem;
+     font-size: 1rem;
+     text-decoration: none;
+     cursor: pointer;
+     margin: 0.3rem;
+ }
+
+ button:hover {
+     background-color: #E0D3AD;
+ }
+
+
+ /************ FOOTER **************/
+
+ footer {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     background-color: gray;
+     color: white;
+     text-align: center;
+     margin-top: 2vw;
+ }
+
+
+ @media only screen and (min-width: 768px) {
+     #liste {
+         grid-template-columns: 1fr 1fr;
+         margin: auto 50px;
+     }
+
+     #indhold {
+         min-height: 50vh;
+         width: 60vw;
+         margin: 4rem auto;
+     }
+
+     header {
+         height: 80px;
+     }
+
+     header img {
+         width: 85px;
+     }
+ }
+
+ @media only screen and (min-width: 1024px) {
+     #liste {
+         grid-template-columns: 1fr 1fr 1fr;
+         margin: auto 100px;
+
+
+     }
+
+     #indhold {
+         min-height: 40vh;
+         width: 50vw;
+         margin: 4rem auto;
+     }
+
+     #menu {
+         display: none;
+     }
+
+
+     .navbar {
+         display: block;
+         overflow: hidden;
+         position: fixed;
+         /* Set the navbar to fixed position */
+         top: 0;
+         /* Position the navbar at the top of the page */
+         width: 100%;
+         /* Full width */
+         z-index: 1000;
+
+     }
+
+     #menuknap {
+         display: none;
+     }
+
+     header {
+         height: 90px;
+     }
+
+     header img {
+         width: 95px;
+     }
+
+
+ }

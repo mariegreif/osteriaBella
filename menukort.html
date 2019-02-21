@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Italiana|Open+Sans" rel="stylesheet">
+    <title>L'Osteria Bella</title>
+
+</head>
+
+
+<body>
+    <div id="popup">
+        <div id="luk">
+            <button>X</button>
+        </div>
+        <div id="indhold"></div>
+    </div>
+
+    <header>
+
+        <img src="Artboard%20vinogglasB-orange.svg" alt="logo">
+        <div id="menuknap">☰</div>
+        <ul id="menu" class="hidden">
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">MENU</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+        <div class="navbar">
+            <a href="#home">ABOUT US</a>
+            <a href="#news">MENUCARD</a>
+            <a href="#contact">CONTACT US</a>
+        </div>
+
+    </header>
+
+    <div id="parallax-1" class="bg-img">
+
+    </div>
+
+    <nav>
+        <button class="filter valgt" data-hold="alle">Alle</button>
+        <button class="filter" data-hold="starters">Starters</button>
+        <button class="filter" data-hold="pasta">Pasta</button>
+        <button class="filter" data-hold="pizza">Pizza</button>
+        <button class="filter" data-hold="wine">Wine</button>
+
+
+    </nav>
+    <main>
+        <h1>Menu</h1>
+
+
+        <section id="liste">
+        </section>
+    </main>
+
+    <!--
+    <footer>
+        <p>Addresse:<br>Grønnegade 97 <br> 1234 København K</p>
+        <p>Åbningstider: <br> Mandag-fredag 10.30-22.00 <br>Lørdag 12.00-23.00</p>
+    </footer>
+-->
+
+
+    <script>
+        window.addEventListener("load", sidenVises);
+
+        function sidenVises() {
+            console.log("siden vises!")
+            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
+        }
+
+        function toggleMenu() {
+            document.querySelector("#menu").classList.toggle("hidden");
+
+
+            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+            if (erSkjult == true) {
+                document.querySelector("#menuknap").textContent = "☰";
+            } else {
+                document.querySelector("#menuknap").innerHTML = "<a href="
+                https: //icons8.com/icon/85443/multiply">Multiply icon by Icons8</a>";
+            }
+        }
+
+
+        let alleRetter = [];
+        let filter = "alle";
+        document.addEventListener("DOMContentLoaded",
+            start);
+
+
+
+        function start() {
+            let dest = document.querySelector("#liste");
+            async function getJson() {
+                let jsonData = await fetch("https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php?id=12gOYiPjyxjtWlISaezpuSzWB0lqKnpzePRIHUh3_tiI");
+                alleRetter = await jsonData.json();
+                alleRetter.sort((a, b) => {
+                    return (a.pris - b.pris);
+                });
+
+                visRetter();
+            }
+
+            function visRetter() {
+
+                dest.innerHTML = "";
+                alleRetter.forEach(ret => {
+                    if (filter == "alle" || filter == ret.kategori) {
+                        let template =
+                            `<article class="ret">
+                                <img src="menukort-billeder/${ret.billede}.jpg" alt="${ret.navn}">
+                                <h2>${ret.navn}</h2>
+                                <p>${ret.kort}</p>
+                                <p>${ret.pris} kr. </p>
+                            </article>
+                        `;
+                        dest.insertAdjacentHTML("beforeend", template);
+                        dest.lastElementChild.addEventListener("click", visSingle);
+
+                        function visSingle() {
+                            document.querySelector("#indhold").innerHTML = `<article class="ret">
+                                <img src="menukort-billeder/${ret.billede}.jpg" alt="${ret.navn}">
+                                <h2>${ret.navn}</h2>
+                                <p>${ret.lang}</p>
+                                <p>${ret.pris} kr. </p>
+                            </article>
+                        `;
+
+                            document.querySelector("#popup").style.display = "block";
+                            document.querySelector("#popup #luk").addEventListener("click", close);
+                        }
+
+                        function close() {
+                            document.querySelector("#popup").style.display = "none";
+                        }
+                    }
+                })
+            }
+            getJson();
+            document.querySelectorAll(".filter").forEach(but => {
+                but.addEventListener("click", filtrering);
+            })
+
+            function filtrering() {
+                document.querySelectorAll(".filter").forEach(but => {
+                    but.classList.remove("valgt");
+                });
+                this.classList.add("valgt");
+                document.querySelector("h1").textContent = this.textContent;
+                filter = this.getAttribute("data-hold");
+                visRetter();
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
