@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>veganvegan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Italiana|Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="header-bg">
+            <figure id="logo"></figure>
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+                <li><a href="">About us</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <a href="#home">About us</a>
+            <a href="#news">Menu</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </header>
+
+    <div id="parallax-1" class="bg-img">
+
+    </div>
+
+    <div class="text">
+        <h2>OUR PHILOSOPHY</h2>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."<br>
+        <button>BOOK A TABLE</button>
+
+    </div>
+
+    <div id="parallax-2" class="bg-img"></div>
+    <div class="text">
+        <h2>THE KITCHEN</h2>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        <button>THE MENU</button>
+    </div>
+
+    <div id="parallax-3" class="bg-img"></div>
+
+    <div class="text">
+        <h2>CONTACT US</h2>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        <button>FIND US ON GOOGLE</button>
+
+    </div>
+
+    <script>
+        window.addEventListener("load", sidenVises);
+
+        function sidenVises() {
+            console.log("siden vises!")
+            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
+        }
+
+        function toggleMenu() {
+            document.querySelector("#menu").classList.toggle("hidden");
+
+
+            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+            if (erSkjult == true) {
+                document.querySelector("#menuknap").textContent = "☰";
+            } else {
+                document.querySelector("#menuknap").textContent = "☰";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
