@@ -17,65 +17,34 @@
 
      }
 
-     header img {
-         width: 65px;
-     }
-
-
      p {
          font-family: 'Open Sans', sans-serif;
          color: #E0D3AD;
      }
 
+     /***********HEADER***************/
 
-     #parallax-1 {
-         background-image: url(coverBillede.svg);
-     }
-
-     #parallax-2 {
-         background-image: url(billedePasta.jpg);
-     }
-
-     #parallax-3 {
-         background-image: url(billedeKrydrer.jpg);
-
-     }
-
-     .bg-img {
-         background-attachment: scroll;
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
-         min-height: 300px;
-         min-width: 300px;
-
-     }
-
-     .text {
+     header {
+         height: 60px;
          display: grid;
-         grid-template-columns: repeat(1fr);
-         grid-gap: 3rem;
-         height: 400px;
-         background-color: rgba(142, 140, 133, 0.26);
-         font-family: 'Open Sans', sans-serif;
-         color: white;
-         padding: 5vw;
-         color: #E0D3AD;
+         background-color: rgba(0, 0, 0, 0.69);
+         overflow: hidden;
+         position: fixed;
+         /* Set the navbar to fixed position */
+         top: 0;
+         /* Position the navbar at the top of the page */
+         width: 100%;
+         /* Full width */
+         z-index: 1000;
+
      }
 
-     .text button {
-         place-self: center;
-         background-color: #FDAC49;
-         font-family: 'Open Sans', sans-serif;
-         padding: 1rem 2.6rem;
-         font-size: 1rem;
-         text-decoration: none;
-         cursor: pointer;
+     header img {
+         width: 65px;
      }
 
-     .hidden {
-         transform: scale(0);
-     }
+
+     /*******************BURGERMENU********************/
 
      #menuknap {
          width: 2em;
@@ -120,6 +89,15 @@
      }
 
 
+     /********************NAVBAR DESKTOP**********************/
+
+     .hidden {
+         transform: scale(0);
+     }
+
+
+
+
      .navbar {
          display: none;
      }
@@ -128,35 +106,77 @@
      .navbar a {
          float: right;
          display: block;
-         color: #f2f2f2;
+         color: #E0D3AD;
          text-align: center;
          padding: 20px 16px;
          text-decoration: none;
-
+         font-family: 'Open-Sans', sans-serif;
+         font-size: 1.5rem;
+         padding: 2vw
      }
-
-     header {
-         height: 60px;
-         display: grid;
-         background-color: rgba(0, 0, 0, 0.69);
-         overflow: hidden;
-         position: fixed;
-         /* Set the navbar to fixed position */
-         top: 0;
-         /* Position the navbar at the top of the page */
-         width: 100%;
-         /* Full width */
-         z-index: 1000;
-
-     }
-
-
 
      /* Change background on mouse-over */
      .navbar a:hover {
-         background: #ddd;
-         color: black;
+         border-left-style: solid;
+         border-right-style: solid;
+
      }
+
+     /**************************BILLEDER BAGGRUND**********************/
+
+
+     #parallax-1 {
+         background-image: url(coverBillede.svg);
+     }
+
+     #parallax-2 {
+         background-image: url(billedePasta.jpg);
+     }
+
+     #parallax-3 {
+         background-image: url(billedeKrydrer.jpg);
+
+     }
+
+     .bg-img {
+         background-attachment: scroll;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         min-height: 300px;
+         min-width: 300px;
+
+     }
+
+
+     /************************TEXT MELLEM BILLEDER*************************/
+
+     .text {
+         display: grid;
+         grid-template-columns: repeat(1fr);
+         grid-gap: 3rem;
+         height: 400px;
+         background-color: rgba(142, 140, 133, 0.26);
+         font-family: 'Open Sans', sans-serif;
+         color: white;
+         padding: 5vw;
+         color: #E0D3AD;
+     }
+
+     .text button {
+         place-self: center;
+         background-color: #FDAC49;
+         font-family: 'Open Sans', sans-serif;
+         padding: 1rem 2.6rem;
+         font-size: 1rem;
+         text-decoration: none;
+         cursor: pointer;
+     }
+
+
+
+
+     /******************************TABLET/DESKTOP************************/
 
      @media only screen and (min-width: 768px) {
          .bg-img {
@@ -173,6 +193,9 @@
          }
      }
 
+
+     /*****DESKTOP****/
+
      @media only screen and (min-width: 1024px) {
          .bg-img {
              /* Set a specific height */
@@ -185,6 +208,10 @@
              background-size: cover;
 
 
+         }
+
+         #menu {
+             display: none;
          }
 
 
