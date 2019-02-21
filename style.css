@@ -17,9 +17,8 @@
 
      }
 
-     #logo {
-         background-image: url(Artboard%20vinogglasB-orange.svg);
-
+     header img {
+         width: 65px;
      }
 
 
@@ -82,7 +81,7 @@
          width: 2em;
          height: 1.5em;
          font-size: 2em;
-         color: white;
+         color: #E0D3AD;
          display: flex;
          flex-direction: column;
          justify-content: space-around;
@@ -95,19 +94,25 @@
 
      #menu {
          width: 100%;
-         background-color: rgba(51, 39, 18, 0.46);
+         background-color: rgba(0, 0, 0, 0.69);
          list-style-type: none;
-         transition: transform 1s;
-         transform-origin: top bottom;
          position: fixed;
-         top: 11.5vw;
+         top: 8.2vw;
          text-align: center;
+
 
      }
 
      #menu a {
-         color: white;
+         color: #E0D3AD;
          text-decoration: none;
+         font-family: 'Open-Sans', sans-serif;
+         font-size: 1.2rem;
+
+     }
+
+     #menu li {
+         padding: 1rem;
      }
 
      #menu a:hover {
@@ -133,8 +138,7 @@
      header {
          height: 60px;
          display: grid;
-         background-color: rgba(0, 0, 0, 0.49);
-         display: block;
+         background-color: rgba(0, 0, 0, 0.69);
          overflow: hidden;
          position: fixed;
          /* Set the navbar to fixed position */
@@ -146,6 +150,8 @@
 
      }
 
+
+
      /* Change background on mouse-over */
      .navbar a:hover {
          background: #ddd;
@@ -156,6 +162,14 @@
          .bg-img {
 
              background-attachment: scroll;
+         }
+
+         header {
+             height: 80px;
+         }
+
+         header img {
+             width: 85px;
          }
      }
 
@@ -189,5 +203,13 @@
 
          #menuknap {
              display: none;
+         }
+
+         header {
+             height: 90px;
+         }
+
+         header img {
+             width: 95px;
          }
      }
