@@ -33,29 +33,36 @@
      display: grid;
      grid-template-columns: 1fr;
      grid-gap: 3rem;
+     margin: auto 2rem;
 
  }
 
  #popup {
-     top: 0;
+     top: 2rem;
      width: 100vw;
      height: 100vh;
      position: fixed;
-     background-color: rgba(51, 39, 18, 0.46);
-     display: none;
+     background-color: black;
      overflow: scroll;
+     display: none;
+
  }
 
 
  #luk {
      position: fixed;
-     right: 2rem;
+     width: 15rem;
+     right: 4rem;
+     top: 6rem;
+     right: 9.5rem;
  }
 
  #luk button {
-     font-size: 2rem;
-     padding: 1rem 1rem;
+     font-size: 1rem;
+     padding: 0.5rem 0.5rem;
  }
+
+
 
 
 
@@ -71,7 +78,7 @@
  }
 
  .ret:hover {
-     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+     box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.2);
      cursor: pointer;
  }
 
@@ -208,10 +215,16 @@
      text-decoration: none;
      cursor: pointer;
      margin: 0.3rem;
+     border: none;
  }
 
  button:hover {
      background-color: #E0D3AD;
+ }
+
+
+ indhold {
+     background-color: black;
  }
 
 
@@ -233,7 +246,7 @@
          margin: auto 50px;
      }
 
-     #indhold {
+     #popup #indhold {
          min-height: 50vh;
          width: 60vw;
          margin: 4rem auto;
@@ -246,6 +259,8 @@
      header img {
          width: 85px;
      }
+
+
  }
 
  @media only screen and (min-width: 1024px) {

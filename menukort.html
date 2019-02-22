@@ -14,7 +14,7 @@
 <body>
     <div id="popup">
         <div id="luk">
-            <button>X</button>
+
         </div>
         <div id="indhold"></div>
     </div>
@@ -133,7 +133,8 @@
                         `;
 
                             document.querySelector("#popup").style.display = "block";
-                            document.querySelector("#popup #luk").addEventListener("click", close);
+
+                            document.querySelector("#popup").addEventListener("click", close);
                         }
 
                         function close() {
@@ -157,6 +158,7 @@
                 visRetter();
             }
         }
+
     </script>
 
 
