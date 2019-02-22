@@ -19,14 +19,22 @@
 
  h1 {
      text-align: center;
+     font-family: 'Italiana', serif;
+     color: #FDAC49;
+     place-self: center;
+     font-size: 2rem;
+     margin-top: 2.5rem;
  }
 
  h2 {
      text-align: center;
+     color: #FDAC49;
+     font-family: 'Open-Sans', sans-serif;
  }
 
  p {
      text-align: center;
+     font-family: 'Open-Sans', sans-serif;
  }
 
  #liste {
@@ -184,8 +192,19 @@
 
  /*****************COVERBILLEDE************/
  #parallax-1 {
-     background-image: url(coverBillede.svg);
+     display: inline-grid;
+     grid-gap: 1fr;
+     background-image: url(coverBilled.svg);
+     width: 100%;
  }
+
+ #parallax-1 img {
+     width: 60%;
+     position: absolute;
+     top: 10rem;
+
+ }
+
 
  .bg-img {
      background-attachment: scroll;
@@ -202,6 +221,7 @@
  /******************SORTERINGS-KNAP*****************/
  nav {
      margin-top: 2rem;
+     margin-bottom: 2rem;
      text-align: center;
 
  }
@@ -232,11 +252,19 @@
 
  footer {
      display: grid;
-     grid-template-columns: 1fr 1fr;
-     background-color: gray;
-     color: white;
+     width: 100%;
+     grid-template-rows: 1fr 1fr;
+     grid-template-columns: 1fr;
+     color: #E0D3AD;
      text-align: center;
      margin-top: 2vw;
+     background-color: rgba(0, 0, 0, 0.69);
+     overflow: hidden;
+     font-family: 'Open-Sans', sans-serif;
+ }
+
+ footer p {
+     padding: 0.5rem;
  }
 
 
