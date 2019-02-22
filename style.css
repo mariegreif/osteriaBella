@@ -1,10 +1,10 @@
      body,
      html {
          height: 100%;
+         width: 100%;
          margin: auto;
          font-size: 100%;
          background-color: black;
-         display: grid;
      }
 
      h1,
@@ -22,11 +22,16 @@
          color: #E0D3AD;
      }
 
+     * {
+         box-sizing: border-box;
+     }
+
+
      /***********HEADER***************/
 
      header {
          height: 60px;
-         display: grid;
+         display: flex;
          background-color: rgba(0, 0, 0, 0.69);
          overflow: hidden;
          position: fixed;
@@ -34,6 +39,7 @@
          top: 0;
          /* Position the navbar at the top of the page */
          width: 100%;
+
          /* Full width */
          z-index: 1000;
 
@@ -53,12 +59,11 @@
          color: #E0D3AD;
          display: flex;
          flex-direction: column;
-         justify-content: space-around;
          align-items: center;
          position: fixed;
          right: 0;
          z-index: 10;
-         top: 0;
+         top: 0.5rem;
      }
 
      #menu {
@@ -105,14 +110,13 @@
      /* Links inside the navbar */
      .navbar a {
          float: right;
-         display: block;
+         display: inline-block;
          color: #E0D3AD;
-         text-align: center;
-         padding: 20px 16px;
          text-decoration: none;
          font-family: 'Open-Sans', sans-serif;
          font-size: 1.5rem;
-         padding: 2vw
+         padding: 2vw;
+         position: relative;
      }
 
      /* Change background on mouse-over */
@@ -126,7 +130,17 @@
 
 
      #parallax-1 {
-         background-image: url(coverBillede.svg);
+         display: inline-grid;
+         grid-gap: 1fr;
+         background-image: url(coverBilled.svg);
+         width: 100%;
+     }
+
+     #parallax-1 img {
+         width: 60%;
+         position: absolute;
+         top: 10rem;
+
      }
 
      #parallax-2 {
@@ -155,7 +169,7 @@
          display: grid;
          grid-template-columns: repeat(1fr);
          grid-gap: 3rem;
-         height: 400px;
+         height: 600px;
          background-color: rgba(142, 140, 133, 0.26);
          font-family: 'Open Sans', sans-serif;
          color: white;
@@ -163,11 +177,15 @@
          color: #E0D3AD;
      }
 
+     .text h2 {
+         font-size: 2rem;
+     }
+
      .text button {
          place-self: center;
          background-color: #FDAC49;
          font-family: 'Open Sans', sans-serif;
-         padding: 1rem 2.6rem;
+         padding: 0.8rem 2.6rem;
          font-size: 1rem;
          text-decoration: none;
          cursor: pointer;
@@ -176,12 +194,12 @@
 
 
 
-     /******************************TABLET/DESKTOP************************/
+     /******************************TABLET************************/
 
      @media only screen and (min-width: 768px) {
          .bg-img {
+             min-height: 500px;
 
-             background-attachment: scroll;
          }
 
          header {
@@ -191,6 +209,13 @@
          header img {
              width: 85px;
          }
+
+         #parallax-1 img {
+             top: 20rem;
+
+         }
+
+
      }
 
 
@@ -207,6 +232,11 @@
              background-repeat: no-repeat;
              background-size: cover;
 
+
+         }
+
+         #parallax-1 img {
+             top: 26rem;
 
          }
 

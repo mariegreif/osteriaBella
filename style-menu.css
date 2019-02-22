@@ -162,7 +162,8 @@
      text-decoration: none;
      font-family: 'Open-Sans', sans-serif;
      font-size: 1.5rem;
-     padding: 2vw
+     padding: 2vw;
+
  }
 
  /* Change background on mouse-over */
@@ -289,6 +290,19 @@
 
      header img {
          width: 95px;
+     }
+
+     .bg-img {
+         /* Set a specific height */
+         min-height: 800px;
+
+         /* Create the parallax scrolling effect */
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+
+
      }
 
 
