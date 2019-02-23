@@ -102,12 +102,11 @@
      color: #E0D3AD;
      display: flex;
      flex-direction: column;
-     justify-content: space-around;
      align-items: center;
      position: fixed;
      right: 0;
      z-index: 10;
-     top: 0;
+     top: 0.5rem;
  }
 
  #menu {
@@ -124,8 +123,9 @@
  #menu a {
      color: #E0D3AD;
      text-decoration: none;
-     font-family: 'Open-Sans', sans-serif;
-     font-size: 1.2rem;
+     font-family: 'Italiana',
+         serif;
+     font-size: 1.3rem;
 
  }
 
@@ -135,6 +135,7 @@
 
  #menu a:hover {
      text-decoration: underline;
+     color: #FDAC49;
  }
 
 
@@ -154,38 +155,40 @@
  /* Links inside the navbar */
  .navbar a {
      float: right;
-     display: block;
+     display: inline-block;
      color: #E0D3AD;
-     text-align: center;
-     padding: 20px 16px;
      text-decoration: none;
-     font-family: 'Open-Sans', sans-serif;
+     font-family: 'Italiana',
+         serif;
      font-size: 1.5rem;
      padding: 2vw;
-
+     position: relative;
  }
 
  /* Change background on mouse-over */
  .navbar a:hover {
      border-left-style: solid;
      border-right-style: solid;
+     color: #FDAC49;
 
  }
-
-
 
  /*****************COVERBILLEDE************/
  #parallax-1 {
-     display: inline-grid;
-     grid-gap: 1fr;
-     background-image: url(coverBilled.svg);
-     width: 100%;
+     background-image: url(img-index/mobileSplash.svg);
+
+     min-height: 550px;
+     min-width: 300px;
  }
 
+
+
  #parallax-1 img {
-     width: 60%;
+     width: 100%;
      position: absolute;
-     top: 10rem;
+     top: 15rem;
+     left: 0;
+     background-color: rgba(0, 0, 0, 0.40);
 
  }
 
@@ -272,7 +275,22 @@
          width: 85px;
      }
 
+     #parallax-1 img {
+         top: 20rem;
+     }
 
+     #parallax-1 {
+         background-image: url(img-index/coverBilled.svg);
+         height: 800px;
+     }
+
+     #menu {
+         top: 4rem;
+     }
+
+     h1 {
+         font-size: 2.3rem;
+     }
  }
 
  @media only screen and (min-width: 1024px) {
@@ -330,6 +348,13 @@
          background-repeat: no-repeat;
          background-size: cover;
 
+
+     }
+
+     #parallax-1 img {
+         width: 70%;
+         top: 15rem;
+         background-color: rgba(0, 0, 0, 0);
 
      }
 
