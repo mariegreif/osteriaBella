@@ -7,42 +7,52 @@
     <title>L'Osteria Bella</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Italiana|Open+Sans" rel="stylesheet">
-    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
 
-        <img src="Artboard%20vinogglasB-orange.svg" alt="logo">
+        <img src="logoHeader.svg" alt="logo">
         <div id="menuknap">☰</div>
         <ul id="menu" class="hidden">
-            <li><a href="#text-1">ABOUT US</a></li>
+            <li><a href="#text-1">ABOUT</a></li>
             <li><a href="menukort.html">MENU</a></li>
             <li><a href="#text-3">CONTACT</a></li>
         </ul>
         <div class="navbar">
 
-            <a href="#text-3">CONTACT US</a>
+            <a href="#text-3">CONTACT</a>
             <a href="menukort.html">MENU</a>
             <a href="#text-1">ABOUT US</a>
         </div>
 
     </header>
     <div id="parallax-1" class="bg-img">
-        <img src="heading.svg">
+        <figure id="welcometo">
+            <img src="heading.svg" alt="velkommen til">
+        </figure>
     </div>
 
     <div id="text-1" class="text">
         <h2>ABOUT US</h2>
         <p>L'Osteria Bella is a cozy small italian bistro located in the heart of Copenhagen. We like to think that delicious food doesn't have to be expensive, that is why we like to call ourselfs "The fancy italian bistro, for small budgets".</p>
         <p>L'Osteria Bella opened up for the first time in 2019, and we have already a handfull of loyal costumers. Wanna know why? Then come visit us!</p>
-        <ul>
-            <i class="fa fa-map-marker"></i> Lillegade 10, 1234 København K <br>
-            <i class='far'>&#xf133;</i> Every day 10.00-22.00
-
-        </ul>
         <a href="">BOOK A TABLE</a>
+        <div class="information">
+            <div class="adress">
+
+                <i class="material-icons">room</i>Lillegade 10, 1234 København K
+
+            </div>
+            <div class="adress">
+                <i class="material-icons">
+                    watch_later
+                </i> Every day 10.00-22.00
+            </div>
+        </div>
+
     </div>
 
     <div id="parallax-2" class="bg-img"></div>
@@ -62,13 +72,22 @@
     <div id="text-3" class="text">
         <h2>CONTACT US</h2>
         <p>If you have any questions or want to know more about L'Osteria Bella, you are more than welcome to contact us. Below you will find our contact information.</p>
-        <ul>
-            <i class="fa fa-phone"></i> +451234567<br>
-            <i class='far'>&#xf0e0;</i> info@osteriabella.com<br>
-            <i class='far'>&#xf133;</i> Monday-Sunday 10.00-22.00<br>
-            <i class="fa fa-map-marker"></i> Address: Lillegade 10, 1234 Copenhagen K
-        </ul>
-        <a href="">FIND US ON GOOGLE MAPS</a>
+
+        <div class="kontakt">
+            <i class="material-icons">
+                phone
+            </i> +451234567<br>
+            <i class="material-icons">
+                email
+            </i> info@osteriabella.com<br>
+            <i class="material-icons">
+                watch_later
+            </i> Monday-Sunday 10.00-22.00<br>
+            <i class="material-icons">
+                room
+            </i> Lillegade 10, 1234 Copenhagen K
+
+        </div>
 
     </div>
 
@@ -93,7 +112,6 @@
                 document.querySelector("#menuknap").innerHTML = "&times;";
             }
         }
-
     </script>
 
 </body>

@@ -8,7 +8,6 @@
      margin: auto;
      font-size: 100%;
      background-color: black;
-     display: grid;
  }
 
 
@@ -55,21 +54,6 @@
      display: none;
 
  }
-
-
- #luk {
-     position: fixed;
-     width: 15rem;
-     right: 4rem;
-     top: 6rem;
-     right: 9.5rem;
- }
-
- #luk button {
-     font-size: 1rem;
-     padding: 0.5rem 0.5rem;
- }
-
 
 
 
@@ -293,6 +277,7 @@
 
  @media only screen and (min-width: 1024px) {
      #liste {
+         display: grid;
          grid-template-columns: 1fr 1fr 1fr;
          margin: auto 100px;
 

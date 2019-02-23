@@ -12,16 +12,10 @@
 
 
 <body>
-    <div id="popup">
-        <div id="luk">
-
-        </div>
-        <div id="indhold"></div>
-    </div>
 
     <header>
 
-        <img src="Artboard%20vinogglasB-orange.svg" alt="logo">
+        <img src="logoHeader.svg" alt="logo">
         <div id="menuknap">☰</div>
         <ul id="menu" class="hidden">
             <li><a href="index.html">HOME</a></li>
@@ -56,6 +50,13 @@
 
         <section id="liste">
         </section>
+
+        <div id="popup">
+            <div id="luk">
+
+            </div>
+            <div id="indhold"></div>
+        </div>
     </main>
 
 
@@ -68,29 +69,21 @@
         function sidenVises() {
             console.log("siden vises!")
             document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-
         }
 
         function toggleMenu() {
             document.querySelector("#menu").classList.toggle("hidden");
-
-
             let erSkjult = document.querySelector("#menu").classList.contains("hidden");
-
             if (erSkjult == true) {
                 document.querySelector("#menuknap").textContent = "☰";
             } else {
                 document.querySelector("#menuknap").innerHTML = "&times;";
             }
         }
-
-
         let alleRetter = [];
         let filter = "alle";
         document.addEventListener("DOMContentLoaded",
             start);
-
-
 
         function start() {
             let dest = document.querySelector("#liste");
@@ -100,12 +93,10 @@
                 alleRetter.sort((a, b) => {
                     return (a.pris - b.pris);
                 });
-
                 visRetter();
             }
 
             function visRetter() {
-
                 dest.innerHTML = "";
                 alleRetter.forEach(ret => {
                     if (filter == "alle" || filter == ret.kategori) {
@@ -128,9 +119,7 @@
                                 <p>${ret.pris} kr. </p>
                             </article>
                         `;
-
                             document.querySelector("#popup").style.display = "block";
-
                             document.querySelector("#popup").addEventListener("click", close);
                         }
 
@@ -150,11 +139,12 @@
                     but.classList.remove("valgt");
                 });
                 this.classList.add("valgt");
-                document.querySelector("h1").textContent = this.textContent;
+                document.querySelector("h2").textContent = this.textContent;
                 filter = this.getAttribute("data-hold");
                 visRetter();
             }
         }
+
     </script>
 
 

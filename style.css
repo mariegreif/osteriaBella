@@ -15,7 +15,6 @@
          color: #FDAC49;
          place-self: center;
 
-
      }
 
      p {
@@ -36,12 +35,8 @@
          background-color: rgba(0, 0, 0, 0.69);
          overflow: hidden;
          position: fixed;
-         /* Set the navbar to fixed position */
          top: 0;
-         /* Position the navbar at the top of the page */
          width: 100%;
-
-         /* Full width */
          z-index: 1000;
 
      }
@@ -81,8 +76,9 @@
      #menu a {
          color: #E0D3AD;
          text-decoration: none;
-         font-family: 'Open-Sans', sans-serif;
-         font-size: 1.2rem;
+         font-family: 'Italiana',
+             serif;
+         font-size: 1.3rem;
 
      }
 
@@ -92,6 +88,7 @@
 
      #menu a:hover {
          text-decoration: underline;
+         color: #FDAC49;
      }
 
 
@@ -114,7 +111,8 @@
          display: inline-block;
          color: #E0D3AD;
          text-decoration: none;
-         font-family: 'Open-Sans', sans-serif;
+         font-family: 'Italiana',
+             serif;
          font-size: 1.5rem;
          padding: 2vw;
          position: relative;
@@ -124,6 +122,7 @@
      .navbar a:hover {
          border-left-style: solid;
          border-right-style: solid;
+         color: #FDAC49;
 
      }
 
@@ -131,26 +130,31 @@
 
 
      #parallax-1 {
-         display: inline-grid;
-         grid-gap: 1fr;
-         background-image: url(coverBilled.svg);
-         width: 100%;
+         background-image: url(mobileSplash.svg);
+
+         min-height: 550px;
+         min-width: 300px;
      }
 
+
+
      #parallax-1 img {
-         width: 60%;
+         width: 100%;
          position: absolute;
-         top: 10rem;
+         top: 15rem;
+         left: 0;
+         background-color: rgba(0, 0, 0, 0.40);
 
      }
 
      #parallax-2 {
          background-image: url(billedePasta.jpg);
+         opacity: 0.8;
      }
 
      #parallax-3 {
          background-image: url(pizzaDegolie.jpg);
-
+         opacity: 0.8;
      }
 
      .bg-img {
@@ -166,6 +170,27 @@
 
      /************************TEXT MELLEM BILLEDER*************************/
 
+     #text-1 {
+         display: grid;
+         grid-gap: 1fr;
+         background-image: url(darkenRestaurant.jpg);
+         background-attachment: scroll;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         min-height: 300px;
+         min-width: 300px;
+
+     }
+
+     #text-2 {
+         background-image: url(pastaMaking.jpg);
+     }
+
+     #text-3 {
+         background-image: url(tomatoesHerbs.jpg);
+     }
+
      .text {
          display: grid;
          grid-template-columns: repeat(1fr);
@@ -173,16 +198,20 @@
          font-family: 'Open Sans', sans-serif;
          padding: 5vw;
          color: #E0D3AD;
+         z-index: 1000;
      }
 
+
      .text h2 {
-         font-size: 2.4rem;
+         font-size: 1.6rem;
      }
 
      .text p {
-         font-size: 1.1rem;
+         font-size: 1rem;
          margin-left: 2rem;
          margin-right: 2rem;
+         line-height: 2;
+
      }
 
      .text a {
@@ -201,16 +230,61 @@
      }
 
 
-     ul {
-         margin-left: 1.2rem;
-         color: #FDAC49;
+     #text-3 p {
+         border-bottom-style: solid;
+         border-bottom-width: thin;
      }
+
+     .kontakt {
+         margin-left: 7rem;
+         line-height: 2.5;
+
+
+     }
+
+     .adress {
+         margin-top: 2rem;
+         text-align: center;
+
+     }
+
+     .adress:nth-child(2) {
+         text-align: left;
+     }
+
+     i {
+         font-size: 0.5rem;
+         color: #FDAC49;
+
+     }
+
+     li {
+         padding: 1rem;
+     }
+
+     .information {
+         display: grid;
+         grid-gap: 0.5rem;
+         grid-template-columns: 1fr 1fr;
+     }
+
+     .adress {
+         font-family: 'Open Sans', sans-serif;
+         color: #E0D3AD;
+     }
+
+
+
 
      /******************************TABLET************************/
 
      @media only screen and (min-width: 768px) {
          .bg-img {
              min-height: 500px;
+             background-attachment: fixed;
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
 
          }
 
@@ -223,6 +297,8 @@
          ul {
              margin-left: 10rem;
          }
+
+
 
          header {
              height: 80px;
@@ -237,6 +313,10 @@
 
          }
 
+         #parallax-1 {
+             background-image: url(coverBilled.svg);
+         }
+
 
      }
 
@@ -245,10 +325,7 @@
 
      @media only screen and (min-width: 1024px) {
          .bg-img {
-             /* Set a specific height */
              min-height: 800px;
-
-             /* Create the parallax scrolling effect */
              background-attachment: fixed;
              background-position: center;
              background-repeat: no-repeat;
@@ -256,6 +333,11 @@
 
 
          }
+
+         #parallax-1 {
+             background-image: url(coverBilled.svg);
+         }
+
 
          #parallax-1 img {
              top: 26rem;
@@ -298,6 +380,11 @@
              margin-right: 18rem;
          }
 
+         .text h2 {
+             font-size: 3rem;
+
+         }
+
          ul {
              font-size: 1.3rem;
              margin-left: 30rem;
@@ -311,5 +398,16 @@
 
          #text-3 {
              height: 600px;
+             background-size: 100%;
          }
+
+         #information {
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+         }
+
+         .adress {
+             text-align: right;
+         }
+
      }
