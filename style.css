@@ -236,9 +236,9 @@
      }
 
      .kontakt {
-         margin-left: 3rem;
-         margin-right: 3rem;
-         line-height: 2.5rem;
+         display: grid;
+         grid-template-columns: auto auto;
+         text-align: center;
 
 
      }
@@ -330,14 +330,14 @@
 
          .kontakt {
              margin-right: 10rem;
-             margin-left: 17rem;
+             margin-left: 10rem;
          }
      }
 
 
      /*****DESKTOP****/
 
-     @media only screen and (min-width: 1024px) {
+     @media only screen and (min-width: 1160px) {
          .bg-img {
              min-height: 800px;
              background-attachment: fixed;
@@ -429,7 +429,14 @@
          }
 
          .kontakt {
-             margin-left: 38rem;
-             margin-right:
+             display: grid;
+             grid-template-columns: auto auto auto auto;
+             text-align: center;
+             line-height: 2;
+             margin-left: 20rem;
+             margin-right: 20rem;
+             font-size: 1.2rem;
+
+
          }
      }
