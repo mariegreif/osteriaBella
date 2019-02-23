@@ -172,7 +172,6 @@
 
      #text-1 {
          display: grid;
-         grid-gap: 1fr;
          background-image: url(img-index/darkenRestaurant.jpg);
          background-attachment: scroll;
          background-position: center;
@@ -193,7 +192,7 @@
 
      .text {
          display: grid;
-         grid-template-columns: repeat(1fr);
+
          height: 700px;
          font-family: 'Open Sans', sans-serif;
          padding: 5vw;
