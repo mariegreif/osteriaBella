@@ -130,7 +130,7 @@
 
 
      #parallax-1 {
-         background-image: url(mobileSplash.svg);
+         background-image: url(img-index/mobileSplash.svg);
 
          min-height: 550px;
          min-width: 300px;
@@ -148,12 +148,12 @@
      }
 
      #parallax-2 {
-         background-image: url(billedePasta.jpg);
+         background-image: url(img-index/billedePasta.jpg);
          opacity: 0.8;
      }
 
      #parallax-3 {
-         background-image: url(pizzaDegolie.jpg);
+         background-image: url(img-index/pizzaDegolie.jpg);
          opacity: 0.8;
      }
 
@@ -173,7 +173,7 @@
      #text-1 {
          display: grid;
          grid-gap: 1fr;
-         background-image: url(darkenRestaurant.jpg);
+         background-image: url(img-index/darkenRestaurant.jpg);
          background-attachment: scroll;
          background-position: center;
          background-repeat: no-repeat;
@@ -184,11 +184,11 @@
      }
 
      #text-2 {
-         background-image: url(pastaMaking.jpg);
+         background-image: url(img-index/pastaMaking.jpg);
      }
 
      #text-3 {
-         background-image: url(tomatoesHerbs.jpg);
+         background-image: url(img-index/tomatoesHerbs.jpg);
      }
 
      .text {
@@ -236,8 +236,9 @@
      }
 
      .kontakt {
-         margin-left: 7rem;
-         line-height: 2.5;
+         margin-left: 3rem;
+         margin-right: 3rem;
+         line-height: 2.5rem;
 
 
      }
@@ -294,11 +295,9 @@
              margin-right: 5rem;
          }
 
-         ul {
-             margin-left: 10rem;
+         .text h2 {
+             font-size: 2.3rem;
          }
-
-
 
          header {
              height: 80px;
@@ -310,14 +309,29 @@
 
          #parallax-1 img {
              top: 20rem;
-
          }
 
          #parallax-1 {
-             background-image: url(coverBilled.svg);
+             background-image: url(img-index/coverBilled.svg);
+             height: 800px;
          }
 
+         #menu {
+             top: 4rem;
+         }
 
+         .adress:nth-child(1) {
+             text-align: center;
+         }
+
+         .adress:nth-child(2) {
+             text-align: center;
+         }
+
+         .kontakt {
+             margin-right: 10rem;
+             margin-left: 17rem;
+         }
      }
 
 
@@ -335,12 +349,16 @@
          }
 
          #parallax-1 {
-             background-image: url(coverBilled.svg);
+             background-image: url(img-index/coverBilled.svg);
+
+
          }
 
 
          #parallax-1 img {
-             top: 26rem;
+             width: 70%;
+             top: 15rem;
+             background-color: rgba(0, 0, 0, 0);
 
          }
 
@@ -410,4 +428,8 @@
              text-align: right;
          }
 
+         .kontakt {
+             margin-left: 38rem;
+             margin-right:
+         }
      }
