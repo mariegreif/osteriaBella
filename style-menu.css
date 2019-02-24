@@ -235,26 +235,6 @@
  }
 
 
- /************ FOOTER **************/
-
- footer {
-     display: grid;
-     width: 100%;
-     grid-template-rows: 1fr 1fr;
-     grid-template-columns: 1fr;
-     color: #E0D3AD;
-     text-align: center;
-     margin-top: 2vw;
-     background-color: rgba(0, 0, 0, 0.69);
-     overflow: hidden;
-     font-family: 'Open-Sans', sans-serif;
- }
-
- footer p {
-     padding: 0.5rem;
- }
-
-
  @media only screen and (min-width: 768px) {
      #liste {
          grid-template-columns: 1fr 1fr;
