@@ -108,20 +108,18 @@
      /* Links inside the navbar */
      .navbar a {
          float: right;
-         display: inline-block;
+         display: block;
          color: #E0D3AD;
          text-decoration: none;
          font-family: 'Italiana',
              serif;
-         font-size: 1.5rem;
+         font-size: 1.3rem;
          padding: 2vw;
          position: relative;
      }
 
      /* Change background on mouse-over */
      .navbar a:hover {
-         border-left-style: solid;
-         border-right-style: solid;
          color: #FDAC49;
 
      }
@@ -338,7 +336,7 @@
 
      @media only screen and (min-width: 1160px) {
          .bg-img {
-             min-height: 600px;
+             min-height: 500px;
              background-attachment: fixed;
              background-position: center;
              background-repeat: no-repeat;
@@ -381,7 +379,7 @@
          }
 
          header {
-             height: 90px;
+             height: 80px;
          }
 
          header img {
@@ -390,8 +388,8 @@
 
          .text p {
              font-size: 1rem;
-             margin-left: 18rem;
-             margin-right: 18rem;
+             margin-left: 16rem;
+             margin-right: 16rem;
          }
 
          .text h2 {

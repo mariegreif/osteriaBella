@@ -79,9 +79,9 @@
  }
 
  header {
-     height: 60px;
+     height: 70px;
      display: grid;
-     background-color: rgba(0, 0, 0, 0.69);
+     background-color: black;
      overflow: hidden;
      position: fixed;
      /* Set the navbar to fixed position */
@@ -111,7 +111,7 @@
 
  #menu {
      width: 100%;
-     background-color: rgba(0, 0, 0, 0.69);
+     background-color: black;
      list-style-type: none;
      position: fixed;
      top: 8.2vw;
@@ -152,25 +152,23 @@
      display: none;
  }
 
+
  /* Links inside the navbar */
  .navbar a {
      float: right;
-     display: inline-block;
+     display: block;
      color: #E0D3AD;
      text-decoration: none;
      font-family: 'Italiana',
          serif;
-     font-size: 1.5rem;
+     font-size: 1.3rem;
      padding: 2vw;
      position: relative;
  }
 
  /* Change background on mouse-over */
  .navbar a:hover {
-     border-left-style: solid;
-     border-right-style: solid;
      color: #FDAC49;
-
  }
 
  /*****************COVERBILLEDE************/
@@ -311,7 +309,7 @@
      }
 
      header {
-         height: 90px;
+         height: 80px;
      }
 
      header img {
