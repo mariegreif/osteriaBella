@@ -14,30 +14,34 @@
 <body>
 
     <header>
-
-        <img src="img-index/logoHeader.svg" alt="logo">
+        <div class="logoheader">
+            <a href="index.html">
+                <img src="img-index/logoMedBaggrund.svg" alt="logo">
+            </a>
+        </div>
         <div id="menuknap">☰</div>
         <ul id="menu" class="hidden">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="index.html#text-1">ABOUT US</a></li>
-            <li><a href="index.html#text-3">CONTACT</a></li>
-            <li><a href="index.html#text-3">BOOK</a></li>
+            <li><a href="#text-1">ABOUT</a></li>
+            <li><a href="menukort.html">MENU</a></li>
+            <li><a href="#text-3">CONTACT</a></li>
         </ul>
         <div class="navbar">
-            <a href="index.html#text-3">CONTACT US</a>
-            <a href="index.html#text-1">ABOUT US</a>
-            <a href="">BOOK</a>
-            <a href="index.html">HOME</a>
-
+            <a href="#text-3">CONTACT</a>
+            <a href="menukort.html">MENU</a>
+            <a href="#text-1">ABOUT US</a>
         </div>
 
     </header>
 
+    <!--
     <div id="parallax-1" class="bg-img">
         <img src="img-index/heading.svg" alt="welcometo">
     </div>
+-->
 
-    <h1>OUR MENU</h1>
+    <div class="headline">
+        <img src="ourMenucard.svg" alt="Headline Menu">
+    </div>
 
     <nav>
         <button class="filter valgt" data-hold="alle">ALL</button>
@@ -147,6 +151,7 @@
                 visRetter();
             }
         }
+
     </script>
 
 

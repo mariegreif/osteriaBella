@@ -30,7 +30,7 @@
      /***********HEADER***************/
 
      header {
-         height: 60px;
+         height: 70px;
          display: flex;
          background-color: black;
          overflow: hidden;
@@ -43,7 +43,12 @@
 
      header img {
          width: 65px;
+         margin-top: 0.2rem;
+         margin-bottom: 0.2rem;
+         margin-left: 0.7rem;
+
      }
+
 
 
      /*******************BURGERMENU********************/
@@ -58,7 +63,6 @@
          align-items: center;
          position: fixed;
          right: 0;
-         z-index: 10;
          top: 0.5rem;
      }
 
@@ -67,9 +71,8 @@
          background-color: black;
          list-style-type: none;
          position: fixed;
-         top: 8.2vw;
+         top: 10.2vw;
          text-align: center;
-
 
      }
 
@@ -301,7 +304,7 @@
          }
 
          header img {
-             width: 85px;
+             width: 75px;
          }
 
          #parallax-1 img {
@@ -379,11 +382,13 @@
          }
 
          header {
-             height: 80px;
+             height: 90px;
          }
 
          header img {
-             width: 95px;
+             width: 85px;
+             margin-top: 0.3rem;
+             margin-left: 1.5rem;
          }
 
          .text p {
@@ -426,6 +431,11 @@
              margin-right: 20rem;
              font-size: 1.2rem;
 
+
+         }
+
+         .logoheader {
+             z-index: 1100;
 
          }
      }

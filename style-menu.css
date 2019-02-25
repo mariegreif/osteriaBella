@@ -7,7 +7,8 @@
      height: 100%;
      margin: auto;
      font-size: 100%;
-     background-color: black;
+     background-image: url(img-index/darkenRestaurant.jpg);
+     background-size: cover;
  }
 
 
@@ -21,8 +22,8 @@
      font-family: 'Italiana', serif;
      color: #FDAC49;
      place-self: center;
-     font-size: 2rem;
-     margin-top: 2.5rem;
+     font-size: 3rem;
+     margin-top: 6.5rem;
  }
 
  h2 {
@@ -91,6 +92,16 @@
      /* Full width */
      z-index: 1000;
 
+ }
+
+ .logoheader {
+     width: 114px;
+     z-index: 1100;
+ }
+
+ .headline {
+     width: 90%;
+     margin-top: 5rem;
  }
 
  /*******************BURGERMENU********************/
@@ -172,15 +183,18 @@
  }
 
  /*****************COVERBILLEDE************/
+ /*
  #parallax-1 {
      background-image: url(img-index/mobileSplash.svg);
 
      min-height: 550px;
      min-width: 300px;
  }
+*/
 
 
 
+ /*
  #parallax-1 img {
      width: 100%;
      position: absolute;
@@ -189,6 +203,7 @@
      background-color: rgba(0, 0, 0, 0.40);
 
  }
+*/
 
 
  .bg-img {
@@ -250,19 +265,20 @@
      }
 
      header img {
-         width: 85px;
+         width: 75px;
      }
 
      #parallax-1 img {
          top: 20rem;
      }
 
-     #parallax-1 {
-         background-image: url(img-index/coverBilled.svg);
-         height: 800px;
+     .headline {
+         width: 70%;
+         margin-top: 5rem;
+         margin-left: 4rem;
      }
 
-     #menu {
+     */ #menu {
          top: 4rem;
      }
 
@@ -302,18 +318,25 @@
          /* Full width */
          z-index: 1000;
 
+
      }
+
+
 
      #menuknap {
          display: none;
      }
 
      header {
-         height: 80px;
+         height: 90px;
+
      }
 
      header img {
-         width: 95px;
+         width: 85px;
+         margin-top: 0.3rem;
+         margin-left: 1.5rem;
+
      }
 
      .bg-img {
@@ -336,5 +359,10 @@
 
      }
 
+     .headline {
+         width: 50%;
+         margin-top: 6rem;
+         margin-left: 6rem;
+     }
 
  }
