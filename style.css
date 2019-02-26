@@ -330,13 +330,12 @@
 
 
          #welcometo img {
-             width: 90%;
-             top: 15rem;
-             left: 2rem;
+             top: 20rem;
+
          }
 
          #parallax-1 {
-             height: 700px;
+             height: 800px;
              background-image: url(img-index/coverBilledMork.jpg);
          }
 
@@ -380,9 +379,9 @@
 
 
          #welcometo img {
-             width: 75%;
-             top: 10rem;
-             left: 10rem;
+             width: 60%;
+             top: 15rem;
+             left: 20rem;
              background-color: rgba(0, 0, 0, 0.50);
          }
 
