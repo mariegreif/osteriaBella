@@ -131,22 +131,22 @@
 
 
      #parallax-1 {
-         background-image: url(img-index/osteriaSplash.jpg);
-         min-height: 500px;
+         background-image: url(img-index/splashMobil.png);
+         min-height: 600px;
+         min-width: 300px;
 
      }
 
-
-
-     #parallax-1 img {
+     #welcometo img {
          width: 100%;
-         position: relative;
-         top: 7rem;
+         position: absolute;
+         top: 15rem;
          left: 0;
          background-color: rgba(0, 0, 0, 0.50);
          animation-name: sliding;
          animation-duration: 7s;
          animation-iteration-count: 1;
+
 
      }
 
@@ -328,13 +328,16 @@
              width: 75px;
          }
 
-         #parallax-1 img {
-             top: 7rem;
+
+         #welcometo img {
+             width: 90%;
+             top: 15rem;
+             left: 2rem;
          }
 
          #parallax-1 {
-
-             height: 800px;
+             height: 700px;
+             background-image: url(img-index/coverBilledMork.jpg);
          }
 
 
@@ -371,16 +374,16 @@
          }
 
 
-         #parallax-1 {}
+         #parallax-1 {
+             background-image: url(img-index/coverBilledMork.jpg);
+         }
 
 
-
-         #parallax-1 img {
-             width: 65%;
-             top: 5.5rem;
-             left: 15rem;
+         #welcometo img {
+             width: 75%;
+             top: 10rem;
+             left: 10rem;
              background-color: rgba(0, 0, 0, 0.50);
-
          }
 
          #menu {
