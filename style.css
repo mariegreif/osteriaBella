@@ -132,20 +132,38 @@
 
      #parallax-1 {
          background-image: url(img-index/mobileSplash.svg);
-
-         min-height: 550px;
-         min-width: 300px;
+         min-height: 500px;
      }
 
 
 
      #parallax-1 img {
          width: 100%;
-         position: absolute;
-         top: 15rem;
+         position: relative;
+         top: 13rem;
          left: 0;
          background-color: rgba(0, 0, 0, 0.40);
+         animation-name: sliding;
+         animation-duration: 7s;
+         animation-iteration-count: 1;
 
+     }
+
+     @keyframes sliding {
+         0% {
+
+             opacity: 0;
+         }
+
+         50% {
+             opacity: 1;
+         }
+
+         /*
+         100% {
+             opacity: 1;
+         }
+*/
      }
 
      #parallax-2 {
@@ -223,10 +241,13 @@
          text-decoration: none;
          cursor: pointer;
          color: black;
+         transition: 0.3s;
      }
 
      .text a:hover {
          background-color: #E0D3AD;
+         opacity: 1;
+         transform: scale(1.1);
      }
 
 
@@ -425,11 +446,9 @@
          .kontakt {
              display: grid;
              grid-template-columns: auto auto auto auto;
-
              line-height: 2;
              margin-left: 20rem;
              margin-right: 20rem;
-             font-size: 1.2rem;
 
 
          }

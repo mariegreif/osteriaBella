@@ -43,7 +43,10 @@
      grid-gap: 3rem;
      margin: auto 2rem;
 
+
  }
+
+
 
  #popup {
      top: 2rem;
@@ -66,13 +69,14 @@
  .ret {
      color: #E0D3AD;
      font-family: 'Open-Sans', sans-serif;
+     transition: transform .2s;
 
 
  }
 
  .ret:hover {
-     box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.2);
      cursor: pointer;
+     transform: scale(1.1);
  }
 
  header img {
@@ -102,6 +106,26 @@
  .headline {
      width: 90%;
      margin-top: 5rem;
+     position: relative;
+     left: 2rem;
+     animation-name: slideLeft;
+     animation-duration: 6s;
+     animation-iteration-count: 1;
+ }
+
+ @keyframes slideLeft {
+     0% {
+
+         left: -25rem;
+         top: 0px;
+     }
+
+     25% {
+
+         left: 2rem;
+         top: 0px;
+     }
+
  }
 
  /*******************BURGERMENU********************/
@@ -236,10 +260,12 @@
      cursor: pointer;
      margin: 0.3rem;
      border: none;
+     transition: 0.3s;
  }
 
  button:hover {
      background-color: #E0D3AD;
+     transform: scale(1.1);
  }
 
 
