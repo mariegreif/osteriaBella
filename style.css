@@ -131,8 +131,9 @@
 
 
      #parallax-1 {
-         background-image: url(img-index/mobileSplash.svg);
+         background-image: url(img-index/osteriaSplash.jpg);
          min-height: 500px;
+
      }
 
 
@@ -140,9 +141,9 @@
      #parallax-1 img {
          width: 100%;
          position: relative;
-         top: 13rem;
+         top: 7rem;
          left: 0;
-         background-color: rgba(0, 0, 0, 0.40);
+         background-color: rgba(0, 0, 0, 0.50);
          animation-name: sliding;
          animation-duration: 7s;
          animation-iteration-count: 1;
@@ -168,12 +169,11 @@
 
      #parallax-2 {
          background-image: url(img-index/billedePasta.jpg);
-         opacity: 0.8;
      }
 
      #parallax-3 {
          background-image: url(img-index/pizzaDegolie.jpg);
-         opacity: 0.7;
+         opacity: 0.9;
      }
 
      .bg-img {
@@ -329,13 +329,14 @@
          }
 
          #parallax-1 img {
-             top: 20rem;
+             top: 7rem;
          }
 
          #parallax-1 {
-             background-image: url(img-index/coverBilled.svg);
+
              height: 800px;
          }
+
 
          #menu {
              top: 4rem;
@@ -369,17 +370,16 @@
 
          }
 
-         #parallax-1 {
-             background-image: url(img-index/coverBilled.svg);
 
+         #parallax-1 {}
 
-         }
 
 
          #parallax-1 img {
-             width: 70%;
-             top: 15rem;
-             background-color: rgba(0, 0, 0, 0);
+             width: 65%;
+             top: 5.5rem;
+             left: 15rem;
+             background-color: rgba(0, 0, 0, 0.50);
 
          }
 
