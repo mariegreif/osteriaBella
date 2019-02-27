@@ -7,7 +7,7 @@
      height: 100%;
      margin: auto;
      font-size: 100%;
-     background-image: url(img-index/darkenRestaurant.jpg);
+     background-image: url(img-index/tomatoesHerbs.jpg);
      background-size: cover;
  }
 
@@ -29,12 +29,14 @@
  h2 {
      text-align: center;
      color: #FDAC49;
-     font-family: 'Open-Sans', sans-serif;
+     font-family: 'Italiana', serif;
+
  }
 
  p {
      text-align: center;
      font-family: 'Open-Sans', sans-serif;
+     font-size: 1rem;
  }
 
  #liste {
@@ -53,11 +55,13 @@
      width: 100vw;
      height: 100vh;
      position: fixed;
-     background-color: black;
      overflow: scroll;
      display: none;
+     background-color: rgba(0, 0, 0, 0.6);
 
  }
+
+
 
 
 
@@ -70,6 +74,7 @@
      color: #E0D3AD;
      font-family: 'Open-Sans', sans-serif;
      transition: transform .2s;
+     background-color: black;
 
 
  }
@@ -197,7 +202,7 @@
      font-family: 'Italiana',
          serif;
      font-size: 1.3rem;
-     padding: 2vw;
+     padding: 2.5vw 2vw 0vw;
      position: relative;
  }
 
@@ -207,27 +212,7 @@
  }
 
  /*****************COVERBILLEDE************/
- /*
- #parallax-1 {
-     background-image: url(img-index/mobileSplash.svg);
 
-     min-height: 550px;
-     min-width: 300px;
- }
-*/
-
-
-
- /*
- #parallax-1 img {
-     width: 100%;
-     position: absolute;
-     top: 15rem;
-     left: 0;
-     background-color: rgba(0, 0, 0, 0.40);
-
- }
-*/
 
 
  .bg-img {
@@ -332,6 +317,10 @@
          display: none;
      }
 
+     #popup #indhold {
+         width: 40vw
+     }
+
 
      .navbar {
          display: block;
@@ -390,5 +379,6 @@
          margin-top: 6rem;
          margin-left: 6rem;
      }
+
 
  }

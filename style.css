@@ -42,7 +42,7 @@
      }
 
      header img {
-         width: 65px;
+         width: 60px;
          margin-top: 0.2rem;
          margin-bottom: 0.2rem;
          margin-left: 0.7rem;
@@ -117,7 +117,7 @@
          font-family: 'Italiana',
              serif;
          font-size: 1.3rem;
-         padding: 2vw;
+         padding: 2.5vw 2vw 0vw;
          position: relative;
      }
 
@@ -144,8 +144,9 @@
          left: 0;
          background-color: rgba(0, 0, 0, 0.50);
          animation-name: sliding;
-         animation-duration: 7s;
+         animation-duration: 10s;
          animation-iteration-count: 1;
+
 
 
      }
@@ -381,7 +382,7 @@
          #welcometo img {
              width: 60%;
              top: 15rem;
-             left: 20rem;
+             left: 15rem;
              background-color: rgba(0, 0, 0, 0.50);
          }
 
@@ -432,8 +433,12 @@
          }
 
          #text-1 {
-             height: 700px;
+             height: 550px;
 
+         }
+
+         #text-2 {
+             height: 550px;
          }
 
          #text-3 {
