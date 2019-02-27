@@ -107,7 +107,7 @@
                                 <img src="menukort-billeder/${ret.billede}.jpg" alt="${ret.navn}">
                                 <h2>${ret.navn}</h2>
                                 <p>${ret.kort}</p>
-                                <p>${ret.pris} kr. </p>
+                                <p><i>${ret.pris} kr.</i></p>
                             </article>
                         `;
                         dest.insertAdjacentHTML("beforeend", template);
@@ -118,7 +118,7 @@
                                 <img src="menukort-billeder/${ret.billede}.jpg" alt="${ret.navn}">
                                 <h2>${ret.navn}</h2>
                                 <p>${ret.lang}</p>
-                                <p>${ret.pris} kr. </p>
+                                <p><i>${ret.pris} kr. </i></p>
                             </article>
                         `;
                             document.querySelector("#popup").style.display = "block";
@@ -146,6 +146,7 @@
                 visRetter();
             }
         }
+
     </script>
 
 
